@@ -1,4 +1,6 @@
 SFCC
 ====
 
-San Francisco Cycle Club
+San Francisco Cycling Club.
+
+Yep.
