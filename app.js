@@ -21,8 +21,29 @@ app.configure(function () {
 
 
 app.get('/', function(req, res){
-	res.render('home');
+	res.render('home', {'type': 'home'});
 });
+
+app.get('/about', function(req, res){
+	res.render('about', {'type': 'page'});
+});
+
+app.get('/rides', function(req, res){
+	res.render('rides', {'type': 'page'});
+});
+
+app.get('/membership', function(req, res){
+	res.render('membership', {'type': 'page'});
+});
+
+app.get('/forum', function(req, res){
+	res.render('forum', {'type': 'page'});
+});
+
+app.get('/contact', function(req, res){
+	res.render('contact', {'type': 'page'});
+});
+
 
 app.listen(3000);
 console.log('Listening on port 3000');

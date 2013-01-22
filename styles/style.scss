@@ -50,4 +50,46 @@ body {
 			}
 		}
 	}
+	&.page {
+		max-width: 1000px;
+		header {
+			margin-bottom: 4em;
+			p { margin-bottom: 0.8em; }
+		}
+		article {
+			line-height: 1.5;
+			font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+			h2 {
+				font-weight: bold;
+				font-size: 30px;
+				margin: 0 0 0.5em 0;
+			}
+			h3 {
+				font-weight: bold;
+				font-size: 18px;
+				text-transform: uppercase;
+				letter-spacing: 0.2em;
+				margin: 1.8em 0 0.3em 0;
+			}
+			p, ul, ol { 
+				margin-bottom: 0.8em;
+				color: #DDD;
+			}
+			ul {
+				list-style: square;
+				margin-left: 1.3em;
+			}
+			a {
+				color: #EC9FBF;
+				text-decoration: none;
+				border-bottom: 1px dotted darken(#EC9FBF, 10%);
+				&:hover { 
+					color: lighten(#EC9FBF, 10%);
+					border-bottom: 1px dotted #EC9FBF;
+				}
+			}
+			strong { font-weight: bold; color: #FFF; }
+			em { font-style: italic; color: #FFF; }
+		}
+	}
 }
