@@ -10,12 +10,14 @@ app.set('view engine', 'handlebars');
 
 // Add SASS compiling
 app.configure(function () {
-	app.use(sass.middleware({
-		src: 'styles', 
-		dest: __dirname + '/public', 
-		debug: false,
-		output_style: 'compressed'
-	}));
+	if (process.env.NODE_ENV == 'dev') {
+		app.use(sass.middleware({
+			src: 'styles', 
+			dest: __dirname + '/public', 
+			debug: false,
+			output_style: 'compressed'
+		}));
+	}
 	app.use(express.static(__dirname + '/public'));
 });
 
