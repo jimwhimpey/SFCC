@@ -53,7 +53,9 @@ body {
 	&.page {
 		max-width: 1000px;
 		header {
-			margin-bottom: 4em;
+			padding-bottom: 3em;
+			margin-bottom: 3em;
+			border-bottom: 1px dotted #333;
 			p { margin-bottom: 0.8em; }
 		}
 		article {
