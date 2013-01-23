@@ -37,7 +37,7 @@ app.get('/contact', function(req, res){
 	res.render('contact', {'type': 'page'});
 });
 
-if (NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'production') {
 	app.listen(80);
 } else {
 	app.listen(3000);
