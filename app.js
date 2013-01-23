@@ -1,6 +1,5 @@
 var express = require('express'),
     exphbs  = require('express3-handlebars'),
-    sass    = require('node-sass'),
     app     = express();
 
 // Handlebars setup
@@ -11,6 +10,7 @@ app.set('view engine', 'handlebars');
 // Add SASS compiling
 app.configure(function () {
 	if (process.env.NODE_ENV == 'dev') {
+		var sass = require('node-sass');
 		app.use(sass.middleware({
 			src: 'styles', 
 			dest: __dirname + '/public', 
