@@ -13,7 +13,7 @@ app.configure(function () {
 	app.use(sass.middleware({
 		src: 'styles', 
 		dest: __dirname + '/public', 
-		debug: true,
+		debug: false,
 		output_style: 'compressed'
 	}));
 	app.use(express.static(__dirname + '/public'));
