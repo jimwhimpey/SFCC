@@ -37,9 +37,10 @@ app.get('/contact', function(req, res){
 	res.render('contact', {'type': 'page'});
 });
 
+var port = process.env.PORT || 3000;
 if (process.env.NODE_ENV === 'production') {
-	app.listen(80);
+	app.listen(port);
 } else {
-	app.listen(3000);
+	app.listen(port);
 }
 console.log('Listening on port 3000');
