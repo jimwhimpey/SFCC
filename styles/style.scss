@@ -7,13 +7,13 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 body {
 	background: #121212;
 	color: #FFF;
-	margin: 10%;
+	margin: 8%;
 	header {
 		font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
 		h1 {
 			font-style: italic;
 			font-weight: bold;
-			font-size: 140px;
+			font-size: 120px;
 			text-shadow: #000 5px 10px 0;
 			margin: 0 0 0.1em 0;
 			a {
@@ -28,6 +28,7 @@ body {
 			color: #DDD;
 			text-shadow: #000 1px 1px 0;
 			margin: 0 0 4em 0;
+			line-height: 1.4;
 		}
 		ul {
 			font-weight: bold;
