@@ -16,7 +16,7 @@ app.configure(function () {
 		debug: false,
 		output_style: 'compressed'
 	}));
-	app.use(express.static(__dirname + '/public'));
+	app.use('/public', express.static(__dirname + '/public'));
 });
 
 
