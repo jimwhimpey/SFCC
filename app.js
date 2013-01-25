@@ -1,5 +1,6 @@
 var express = require('express'),
     exphbs  = require('express3-handlebars'),
+    sass    = require('node-sass'),
     app     = express();
 
 // Handlebars setup
@@ -9,6 +10,12 @@ app.set('view engine', 'handlebars');
 
 // Add SASS compiling
 app.configure(function () {
+	app.use(sass.middleware({
+		src: 'styles', 
+		dest: __dirname + '/public', 
+		debug: false,
+		output_style: 'compressed'
+	}));
 	app.use(express.static(__dirname + '/public'));
 });
 
@@ -37,10 +44,6 @@ app.get('/contact', function(req, res){
 	res.render('contact', {'type': 'page'});
 });
 
-var port = process.env.PORT || 3000;
-if (process.env.NODE_ENV === 'production') {
-	app.listen(port);
-} else {
-	app.listen(port);
-}
+
+app.listen(3000);
 console.log('Listening on port 3000');
