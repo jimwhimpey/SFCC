@@ -1,1 +1,112 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after{content:'';content:none;}q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}body{background:#121212;color:#FFF;margin:8%;}body header{font-family:'Source Sans Pro','Helvetica Neue',sans-serif;}body header h1{font-style:italic;font-weight:bold;font-size:120px;text-shadow:#000 5px 10px 0;margin:0 0 0.1em 0;}body header h1 a{color:#FFF;text-decoration:none;}body header h1 a:hover{color:#EFEFEF;}body header p{font-style:italic;font-size:22px;color:#DDD;text-shadow:#000 1px 1px 0;margin:0 0 4em 0;line-height:1.4;}body header ul{font-weight:bold;font-size:20px;text-transform:uppercase;margin-left:-0.5em;}body header ul li{display:inline-block;}body header ul li a{color:#FFF;text-decoration:none;display:inline-block;padding:0.5em;margin:0 0.9em 0 0;}body header ul li a:hover{color:#EEE;background:#222;}body.page{max-width:1000px;}body.page header{padding-bottom:3em;margin-bottom:3em;border-bottom:1px dotted #333;}body.page header p{margin-bottom:0.8em;}body.page article{line-height:1.5;font-family:'Source Sans Pro','Helvetica Neue',sans-serif;}body.page article h2{font-weight:bold;font-size:30px;margin:0 0 0.5em 0;}body.page article h3{font-weight:bold;font-size:18px;text-transform:uppercase;letter-spacing:0.2em;margin:1.8em 0 0.3em 0;}body.page article p,body.page article ul,body.page article ol{margin-bottom:0.8em;color:#DDD;}body.page article ul{list-style:square;margin-left:1.3em;}body.page article a{color:#EC9FBF;text-decoration:none;border-bottom:1px dotted #e474a3;}body.page article a:hover{color:#f4cadb;border-bottom:1px dotted #EC9FBF;}body.page article strong{font-weight:bold;color:#FFF;}body.page article em{font-style:italic;color:#FFF;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background: #121212;
+  color: #FFF;
+  margin: 8%; }
+  body header {
+    font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif; }
+    body header h1 {
+      font-style: italic;
+      font-weight: bold;
+      font-size: 120px;
+      text-shadow: #000 5px 10px 0;
+      margin: 0 0 0.1em 0; }
+      body header h1 a {
+        color: #FFF;
+        text-decoration: none; }
+        body header h1 a:hover {
+          color: #EFEFEF; }
+    body header p {
+      font-style: italic;
+      font-size: 22px;
+      color: #DDD;
+      text-shadow: #000 1px 1px 0;
+      margin: 0 0 4em 0;
+      line-height: 1.4; }
+    body header ul {
+      font-weight: bold;
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-left: -0.5em; }
+      body header ul li {
+        display: inline-block; }
+        body header ul li a {
+          color: #FFF;
+          text-decoration: none;
+          display: inline-block;
+          padding: 0.5em;
+          margin: 0 0.9em 0 0; }
+          body header ul li a:hover {
+            color: #EEE;
+            background: #222; }
+  body.page {
+    max-width: 1000px; }
+    body.page header {
+      padding-bottom: 3em;
+      margin-bottom: 3em;
+      border-bottom: 1px dotted #333; }
+      body.page header p {
+        margin-bottom: 0.8em; }
+    body.page article {
+      line-height: 1.5;
+      font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif; }
+      body.page article h2 {
+        font-weight: bold;
+        font-size: 30px;
+        margin: 0 0 0.5em 0; }
+      body.page article h3 {
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        margin: 1.8em 0 0.3em 0; }
+      body.page article p, body.page article ul, body.page article ol {
+        margin-bottom: 0.8em;
+        color: #DDD; }
+      body.page article ul {
+        list-style: square;
+        margin-left: 1.3em; }
+      body.page article a {
+        color: #EC9FBF;
+        text-decoration: none;
+        border-bottom: 1px dotted #e474a3; }
+        body.page article a:hover {
+          color: #f4cadb;
+          border-bottom: 1px dotted #EC9FBF; }
+      body.page article strong {
+        font-weight: bold;
+        color: #FFF; }
+      body.page article em {
+        font-style: italic;
+        color: #FFF; }
