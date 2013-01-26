@@ -24,7 +24,7 @@ body {
 		}
 		p {
 			font-style: italic;
-			font-size: 22px;
+			font-size: 19px;
 			color: #DDD;
 			text-shadow: #000 1px 1px 0;
 			margin: 0 0 4em 0;
@@ -34,14 +34,14 @@ body {
 			font-weight: bold;
 			font-size: 20px;
 			text-transform: uppercase;
-			margin-left: -0.5em;
+			margin-left: -0.35em;
 			li {
 				display: inline-block;
 				a {
 					color: #FFF;
 					text-decoration: none;
 					display: inline-block;
-					padding: 0.5em;
+					padding: 0.35em;
 					margin: 0 0.9em 0 0;
 					&:hover {
 						color: #EEE;
