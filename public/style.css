@@ -83,15 +83,16 @@ body {
       font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif; }
       body.page article h2 {
         font-weight: bold;
-        font-size: 30px;
+        font-size: 36px;
         margin: 0 0 0.5em 0; }
       body.page article h3 {
         font-weight: bold;
-        font-size: 18px;
+        font-size: 22px;
         text-transform: uppercase;
         letter-spacing: 0.2em;
         margin: 1.8em 0 0.3em 0; }
       body.page article p, body.page article ul, body.page article ol {
+        font-size: 18px;
         margin-bottom: 0.8em;
         color: #DDD; }
       body.page article ul {
