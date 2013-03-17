@@ -31,28 +31,22 @@ table {
   border-spacing: 0; }
 
 body {
-  background: #121212;
-  color: #FFF;
-  margin: 8%; }
+  background: #212121;
+  color: #FFF; }
   body header {
+    background: #121212;
+    padding: 5em;
     font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif; }
-    body header h1 {
-      font-style: italic;
-      font-weight: bold;
-      font-size: 120px;
-      text-shadow: #000 5px 10px 0;
-      margin: 0 0 0.1em 0; }
-      body header h1 a {
-        color: #FFF;
-        text-decoration: none; }
-        body header h1 a:hover {
-          color: #EFEFEF; }
+    body header object {
+      margin: 0 0 5em 0;
+      width: 402px;
+      height: 250px; }
     body header p {
       font-style: italic;
       font-size: 19px;
       color: #DDD;
       text-shadow: #000 1px 1px 0;
-      margin: 0 0 4em 0;
+      margin: 0 0 1em 0;
       line-height: 1.4; }
     body header ul {
       font-weight: bold;
@@ -70,44 +64,44 @@ body {
           body header ul li a:hover {
             color: #EEE;
             background: #222; }
-  body.page {
-    max-width: 1000px; }
-    body.page header {
-      padding-bottom: 3em;
-      margin-bottom: 3em;
-      border-bottom: 1px dotted #333; }
-      body.page header p {
-        margin-bottom: 0.8em; }
-    body.page article {
-      line-height: 1.5;
-      font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif; }
-      body.page article h2 {
-        font-weight: bold;
-        font-size: 36px;
-        margin: 0 0 0.5em 0; }
-      body.page article h3 {
-        font-weight: bold;
-        font-size: 22px;
-        text-transform: uppercase;
-        letter-spacing: 0.2em;
-        margin: 1.8em 0 0.3em 0; }
-      body.page article p, body.page article ul, body.page article ol {
-        font-size: 18px;
-        margin-bottom: 0.8em;
-        color: #DDD; }
-      body.page article ul {
-        list-style: square;
-        margin-left: 1.3em; }
-      body.page article a {
-        color: #EC9FBF;
-        text-decoration: none;
-        border-bottom: 1px dotted #e474a3; }
-        body.page article a:hover {
-          color: #f4cadb;
-          border-bottom: 1px dotted #EC9FBF; }
-      body.page article strong {
-        font-weight: bold;
-        color: #FFF; }
-      body.page article em {
-        font-style: italic;
-        color: #FFF; }
+  body.page header {
+    border-bottom: 1px dotted #333; }
+    body.page header object {
+      margin: 0 0 1em 0; }
+    body.page header p {
+      margin-bottom: 0.8em; }
+  body.page article {
+    max-width: 1200px;
+    padding: 5em;
+    line-height: 1.5;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif; }
+    body.page article h2 {
+      font-weight: bold;
+      font-size: 36px;
+      margin: 0 0 0.5em 0; }
+    body.page article h3 {
+      font-weight: bold;
+      font-size: 22px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin: 1.8em 0 0.3em 0; }
+    body.page article p, body.page article ul, body.page article ol {
+      font-size: 18px;
+      margin-bottom: 0.8em;
+      color: #DDD; }
+    body.page article ul {
+      list-style: square;
+      margin-left: 1.3em; }
+    body.page article a {
+      color: #EC9FBF;
+      text-decoration: none;
+      border-bottom: 1px dotted #e474a3; }
+      body.page article a:hover {
+        color: #f4cadb;
+        border-bottom: 1px dotted #EC9FBF; }
+    body.page article strong {
+      font-weight: bold;
+      color: #FFF; }
+    body.page article em {
+      font-style: italic;
+      color: #FFF; }

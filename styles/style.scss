@@ -5,29 +5,23 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 // Stylin'
 
 body {
-	background: #121212;
+	background: lighten(#121212, 6%);
 	color: #FFF;
-	margin: 8%;
 	header {
+		background: #121212;
+		padding: 5em;
 		font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
-		h1 {
-			font-style: italic;
-			font-weight: bold;
-			font-size: 120px;
-			text-shadow: #000 5px 10px 0;
-			margin: 0 0 0.1em 0;
-			a {
-				color: #FFF;
-				text-decoration: none;
-				&:hover { color: #EFEFEF; }
-			}
+		object { 
+			margin: 0 0 5em 0;
+			width: 402px;
+			height: 250px;
 		}
 		p {
 			font-style: italic;
 			font-size: 19px;
 			color: #DDD;
 			text-shadow: #000 1px 1px 0;
-			margin: 0 0 4em 0;
+			margin: 0 0 1em 0;
 			line-height: 1.4;
 		}
 		ul {
@@ -52,14 +46,14 @@ body {
 		}
 	}
 	&.page {
-		max-width: 1000px;
 		header {
-			padding-bottom: 3em;
-			margin-bottom: 3em;
 			border-bottom: 1px dotted #333;
+			object { margin: 0 0 1em 0; }
 			p { margin-bottom: 0.8em; }
 		}
 		article {
+			max-width: 1200px;
+			padding: 5em;
 			line-height: 1.5;
 			font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
 			h2 {
