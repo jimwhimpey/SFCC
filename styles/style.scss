@@ -9,7 +9,7 @@ body {
 	color: #FFF;
 	header {
 		background: #121212;
-		padding: 10%;
+		padding: 5%;
 		font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
 		object { 
 			margin: 0 0 5em 0;
@@ -17,6 +17,7 @@ body {
 			height: 250px;
 		}
 		@media only screen and (max-width : 320px) {
+			& { padding: 10%; }
 			object {
 				width: 200px;
 				height: 150px;
@@ -59,9 +60,12 @@ body {
 		}
 		article {
 			max-width: 1200px;
-			padding: 10%;
+			padding: 5%;
 			line-height: 1.5;
 			font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+			@media only screen and (max-width : 320px) {
+				& { padding: 10px; }
+			}
 			h2 {
 				font-weight: bold;
 				font-size: 36px;
