@@ -46,6 +46,10 @@ app.get('/contact', function(req, res){
 	res.render('contact', {'type': 'page'});
 });
 
+app.get('/calendar', function(req, res){
+	// https://www.google.com/calendar/feeds/ktihar6uvc0lc1odtovk41fklo%40group.calendar.google.com/public/basic
+	res.render('calendar', {'type': 'page'});
+});
 
 var port = process.env.PORT || 5000;
 app.listen(port, function() {

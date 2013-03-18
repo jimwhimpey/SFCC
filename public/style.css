@@ -35,12 +35,16 @@ body {
   color: #FFF; }
   body header {
     background: #121212;
-    padding: 5em;
+    padding: 10%;
     font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif; }
     body header object {
       margin: 0 0 5em 0;
       width: 402px;
       height: 250px; }
+    @media only screen and (max-width: 320px) {
+      body header object {
+        width: 200px;
+        height: 150px; } }
     body header p {
       font-style: italic;
       font-size: 19px;
@@ -72,7 +76,7 @@ body {
       margin-bottom: 0.8em; }
   body.page article {
     max-width: 1200px;
-    padding: 5em;
+    padding: 10%;
     line-height: 1.5;
     font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif; }
     body.page article h2 {

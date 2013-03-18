@@ -9,12 +9,18 @@ body {
 	color: #FFF;
 	header {
 		background: #121212;
-		padding: 5em;
+		padding: 10%;
 		font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
 		object { 
 			margin: 0 0 5em 0;
 			width: 402px;
 			height: 250px;
+		}
+		@media only screen and (max-width : 320px) {
+			object {
+				width: 200px;
+				height: 150px;
+			}
 		}
 		p {
 			font-style: italic;
@@ -53,7 +59,7 @@ body {
 		}
 		article {
 			max-width: 1200px;
-			padding: 5em;
+			padding: 10%;
 			line-height: 1.5;
 			font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
 			h2 {
