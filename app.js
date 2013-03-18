@@ -39,7 +39,7 @@ app.get('/membership', function(req, res){
 });
 
 app.get('/forum', function(req, res){
-	res.render('forum', {'type': 'page'});
+	res.redirect('http://sfccforum.org');
 });
 
 app.get('/contact', function(req, res){
