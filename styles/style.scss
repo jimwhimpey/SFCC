@@ -5,9 +5,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 // Stylin'
 
 body {
-	background: lighten(#121212, 6%);
+	background: lighten(#121212, 8%);
 	color: #FFF;
 	header {
+		text-align: center;
 		background: #121212;
 		padding: 5%;
 		font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
@@ -55,11 +56,12 @@ body {
 	&.page {
 		header {
 			border-bottom: 1px dotted #333;
-			object { margin: 0 0 1em 0; }
-			p { margin-bottom: 0.8em; }
+			object { margin: 0 0 2em 0; }
+			p { margin-bottom: 1.6em; }
 		}
 		article {
-			max-width: 1200px;
+			margin: 0 auto;
+			max-width: 1000px;
 			padding: 5%;
 			line-height: 1.5;
 			font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;

@@ -31,9 +31,10 @@ table {
   border-spacing: 0; }
 
 body {
-  background: #212121;
+  background: #262626;
   color: #FFF; }
   body header {
+    text-align: center;
     background: #121212;
     padding: 5%;
     font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif; }
@@ -74,11 +75,12 @@ body {
   body.page header {
     border-bottom: 1px dotted #333; }
     body.page header object {
-      margin: 0 0 1em 0; }
+      margin: 0 0 2em 0; }
     body.page header p {
-      margin-bottom: 0.8em; }
+      margin-bottom: 1.6em; }
   body.page article {
-    max-width: 1200px;
+    margin: 0 auto;
+    max-width: 1000px;
     padding: 5%;
     line-height: 1.5;
     font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif; }
