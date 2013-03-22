@@ -42,13 +42,13 @@ body {
       margin: 0 0 5em 0;
       width: 402px;
       height: 250px; }
-    @media only screen and (max-width: 320px) {
+    @media only screen and (max-width: 480px) {
       body header {
         padding: 10%; }
 
       body header object {
-        width: 200px;
-        height: 150px; } }
+        width: 250px;
+        height: 180px; } }
     body header p {
       font-style: italic;
       font-size: 19px;

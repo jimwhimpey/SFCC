@@ -17,11 +17,11 @@ body {
 			width: 402px;
 			height: 250px;
 		}
-		@media only screen and (max-width : 320px) {
+		@media only screen and (max-width : 480px) {
 			& { padding: 10%; }
 			object {
-				width: 200px;
-				height: 150px;
+				width: 250px;
+				height: 180px;
 			}
 		}
 		p {
