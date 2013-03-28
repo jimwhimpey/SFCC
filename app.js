@@ -1,7 +1,9 @@
 var express = require('express'),
     exphbs  = require('express3-handlebars'),
     sass    = require('node-sass'),
-    app     = express();
+    app     = express(),
+    http    = require("http"),
+    parser  = require('xml2js').parseString;;
 
 // Handlebars setup
 app.engine('handlebars', exphbs({	defaultLayout: 'main',
@@ -46,9 +48,40 @@ app.get('/contact', function(req, res){
 	res.render('contact', {'type': 'page'});
 });
 
-app.get('/calendar', function(req, res){
-	// https://www.google.com/calendar/feeds/ktihar6uvc0lc1odtovk41fklo%40group.calendar.google.com/public/basic
-	res.render('calendar', {'type': 'page'});
+app.get('/calendar', function(req, response){
+	// 
+	// var options = {
+	//   host: 'www.google.com',
+	//   path: '/calendar/feeds/ktihar6uvc0lc1odtovk41fklo%40group.calendar.google.com/public/full',
+	//   port: 80
+	// };
+	// 
+	// http.get(options, function(res) {
+	// 
+	// 	var data = "";
+	// 
+	// 	res.on("data", function (chunk) {
+	// 		data += chunk;
+	// 	});
+	// 
+	// 	res.on("end", function () {
+	// 		
+	// 		parser(data, function (err, result) {
+	// 			for (var i=0; i < result.feed.entry.length; i++) {
+	// 				console.log(result.feed.entry[i]);
+	// 			};
+	// 		});
+	// 		
+	// 	});
+	// 	
+	// }).on('error', function(e) {
+	// 	
+	//   console.log("Got error: " + e.message);
+	//   
+	// });
+	
+	response.render('calendar', {'type': 'page'});
+	
 });
 
 var port = process.env.PORT || 5000;
