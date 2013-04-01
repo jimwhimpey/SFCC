@@ -3,7 +3,8 @@ var express = require('express'),
     sass    = require('node-sass'),
     app     = express(),
     http    = require("http"),
-    parser  = require('xml2js').parseString;;
+    parser  = require('xml2js').parseString,
+	moment  = require('moment');;
 
 // Handlebars setup
 app.engine('handlebars', exphbs({	defaultLayout: 'main',
@@ -49,38 +50,62 @@ app.get('/contact', function(req, res){
 });
 
 app.get('/calendar', function(req, response){
-	// 
-	// var options = {
-	//   host: 'www.google.com',
-	//   path: '/calendar/feeds/ktihar6uvc0lc1odtovk41fklo%40group.calendar.google.com/public/full',
-	//   port: 80
-	// };
-	// 
-	// http.get(options, function(res) {
-	// 
-	// 	var data = "";
-	// 
-	// 	res.on("data", function (chunk) {
-	// 		data += chunk;
-	// 	});
-	// 
-	// 	res.on("end", function () {
-	// 		
-	// 		parser(data, function (err, result) {
-	// 			for (var i=0; i < result.feed.entry.length; i++) {
-	// 				console.log(result.feed.entry[i]);
-	// 			};
-	// 		});
-	// 		
-	// 	});
-	// 	
-	// }).on('error', function(e) {
-	// 	
-	//   console.log("Got error: " + e.message);
-	//   
-	// });
 	
-	response.render('calendar', {'type': 'page'});
+	var options = {
+	  host: 'www.google.com',
+	  path: '/calendar/feeds/ktihar6uvc0lc1odtovk41fklo%40group.calendar.google.com/public/full',
+	  port: 80
+	};
+	
+	function compare(a,b) {
+		if (a.timestamp < b.timestamp)
+			return -1;
+		if (a.timestamp > b.timestamp)
+			return 1;
+		return 0;
+	}
+	
+	http.get(options, function(res) {
+	
+		var data = "",
+			calendar = [];
+	
+		// Chunk the data together piece by piece as it gets returned
+		res.on("data", function (chunk) {data += chunk; });
+		
+		// Onse all the data is returned
+		res.on("end", function () {
+			
+			// Parse it with XML2JS
+			parser(data, function (err, result) {
+				
+				// Loop trhough it
+				for (var i=0; i < result.feed.entry.length; i++) {
+					
+					console.log("=============================");
+					console.log(result.feed.entry[i].title[0]._);
+					
+					var time = moment(result.feed.entry[i]['gd:when'][0]['$'].startTime);
+					
+					calendar.push({
+						"timestamp": time.format("X"),
+						"date": time.format("dddd, MMMM Do, h:mma"),
+						"title": result.feed.entry[i].title[0]._,
+						"where": result.feed.entry[i]['gd:where'][0]['$'].valueString
+					});
+				};
+				
+				calendar.sort(compare);
+				
+				response.render('calendar', {'type': 'page', 'calendar': calendar});
+				
+			});
+			
+		});
+		
+	}).on('error', function(e) {
+		console.log("Got error: " + e.message);
+	});
 	
 });
 

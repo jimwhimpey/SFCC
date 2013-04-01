@@ -117,3 +117,12 @@ body {
     body.page article em {
       font-style: italic;
       color: #FFF; }
+  body.page .calendar h3 {
+    margin-bottom: -0.2em;
+    color: #FFF; }
+  body.page .calendar .where {
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+    margin: 0; }
+  body.page .calendar .when {
+    color: rgba(255, 255, 255, 0.8); }

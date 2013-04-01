@@ -101,5 +101,17 @@ body {
 			strong { font-weight: bold; color: #FFF; }
 			em { font-style: italic; color: #FFF; }
 		}
+		.calendar {
+			h3 { 
+				margin-bottom: -0.2em;
+				color: #FFF;
+			}
+			.where {
+				color: rgba(255,255,255,0.5);
+				font-style: italic;
+				margin: 0;
+			}
+			.when { color: rgba(255,255,255,0.8); }
+		}
 	}
 }
