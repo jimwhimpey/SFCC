@@ -82,10 +82,10 @@ app.get('/calendar', function(req, response){
 				// Loop trhough it
 				for (var i=0; i < result.feed.entry.length; i++) {
 					
-					console.log("=============================");
-					console.log(result.feed.entry[i].title[0]._);
+					console.log("TEST");
+					console.log("result.feed.entry[i]['gd:when'][0]['$'].startTime", result.feed.entry[i]['gd:when'][0]['$'].startTime);
 					
-					var time = moment(result.feed.entry[i]['gd:when'][0]['$'].startTime);
+					var time = moment(result.feed.entry[i]['gd:when'][0]['$'].startTime).subtract('hours', 7);
 					
 					calendar.push({
 						"timestamp": time.format("X"),
