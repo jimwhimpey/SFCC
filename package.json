@@ -8,7 +8,8 @@
 		"express3-handlebars": "0.1.x",
 		"node-sass": "0.2.x",
 		"xml2js": "x",
-		"moment": "x"
+		"moment": "x",
+    "instagram-node-lib": "*"
 	},
 	"engines": {
 		"node": "0.8.x",
