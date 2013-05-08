@@ -30,6 +30,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.cf:before, .cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1; }
+
 body {
   background: #262626;
   color: #FFF; }
@@ -51,14 +67,14 @@ body {
         height: 180px; } }
     body header p {
       font-style: italic;
-      font-size: 19px;
-      color: #DDD;
+      font-size: 1.16667em;
+      color: #dddddd;
       text-shadow: #000 1px 1px 0;
       margin: 0 0 1em 0;
       line-height: 1.4; }
     body header ul {
       font-weight: bold;
-      font-size: 20px;
+      font-size: 1.22222em;
       text-transform: uppercase;
       margin-left: -0.35em; }
       body header ul li {
@@ -89,28 +105,28 @@ body {
         padding: 10px; } }
     body.page article h2 {
       font-weight: bold;
-      font-size: 36px;
+      font-size: 2em;
       margin: 0 0 0.5em 0; }
     body.page article h3 {
       font-weight: bold;
-      font-size: 22px;
+      font-size: 1.44444em;
       text-transform: uppercase;
       letter-spacing: 0.2em;
       margin: 1.8em 0 0.3em 0; }
     body.page article p, body.page article ul, body.page article ol {
-      font-size: 18px;
+      font-size: 1.11111em;
       margin-bottom: 0.8em;
-      color: #DDD; }
+      color: #dddddd; }
     body.page article ul {
       list-style: square;
       margin-left: 1.3em; }
     body.page article a {
-      color: #EC9FBF;
+      color: #ec9fbf;
       text-decoration: none;
       border-bottom: 1px dotted #e474a3; }
       body.page article a:hover {
         color: #f4cadb;
-        border-bottom: 1px dotted #EC9FBF; }
+        border-bottom: 1px dotted #ec9fbf; }
     body.page article strong {
       font-weight: bold;
       color: #FFF; }
@@ -126,3 +142,21 @@ body {
     margin: 0; }
   body.page .calendar .when {
     color: rgba(255, 255, 255, 0.8); }
+
+.instagram_header var {
+  color: #ec9fbf; }
+
+
+#instagram_grid {
+  list-style: none;
+  margin-bottom: 50px;
+  border: 3px solid #ec9fbf;
+  padding: 30px;
+  position: relative;
+  bottom: 25px;
+  text-align: center; }
+  #instagram_grid li {
+    display: inline-block; }
+    #instagram_grid li > a {
+      text-decoration: none;
+      border: none; }
