@@ -35,7 +35,7 @@ app.get('/', function(req, res){
 
 app.get('/instagram', function(req, res) {
   Instagram.tags.recent({
-    name: 'sfcc',
+    name: 'sfcycling',
     complete: function(data) {
       console.log(data);
       res.send(data);

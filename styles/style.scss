@@ -177,9 +177,10 @@ body {
   padding: 30px;
   position: relative;
   bottom: 25px;
+  text-align: center;
   
   li {
-    float: left;
+    display: inline-block;
     
     > a {
       text-decoration: none;

@@ -153,9 +153,10 @@ body {
   border: 3px solid #ec9fbf;
   padding: 30px;
   position: relative;
-  bottom: 25px; }
+  bottom: 25px;
+  text-align: center; }
   #instagram_grid li {
-    float: left; }
+    display: inline-block; }
     #instagram_grid li > a {
       text-decoration: none;
       border: none; }
