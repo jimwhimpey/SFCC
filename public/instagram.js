@@ -1,12 +1,15 @@
 $(document).ready(function() {
-  'use strict';
+	'use strict';
 
-  var grid = $('#instagram_grid');
-  $.getJSON('/instagram', function(data) {
-    $.each(data, function(i, item) {
-      grid.append('<li><a href="'
-                 + item.link + '" target="_blank"><img src="'
-                 + item.images.thumbnail.url + '" /></a></li>');
-    });
-  })
+	var grid = $('.instagram');
+	$.getJSON('/instagram', function(data) {
+		// Remove the loading text
+		$('.instagram_container h2').remove();
+		$.each(data, function(i, item) {
+			grid.append('<li><a href="'
+							+ item.link + '"><img src="'
+							+ item.images.thumbnail.url + '" /></a></li>');
+		});
+	});
+
 });

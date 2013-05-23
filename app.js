@@ -34,13 +34,12 @@ app.get('/', function(req, res){
 });
 
 app.get('/instagram', function(req, res) {
-  Instagram.tags.recent({
-    name: 'sfcycling',
-    complete: function(data) {
-      console.log(data);
-      res.send(data);
-    }
-  });
+	Instagram.tags.recent({
+		name: 'sfcyclingclub',
+		complete: function(data) {
+			res.send(data);
+		}
+	});
 });
 
 app.get('/about', function(req, res){
