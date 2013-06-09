@@ -1,0 +1,31 @@
+{{>header}}
+
+<article>
+
+	<h2>Rides and Calendar</h2>
+
+	<p>All our upcoming events. These rides aren't necessarily organised by us but you'll often find our members there. 
+		Coming along to the rides listed here is the best way to introduce yourself.</p>
+		
+	<p>Our <a href="http://twitter.com/sfcycling">Twitter account</a> is always our most up to date source of ride 
+		information. Please check there to confirm a ride is on before showing up for the first time. Additional 
+		rides are always being organised on <a href="/forum">the forum</a>.
+	
+	<ul class='calendar'>
+		{{#each calendar}}
+			<li {{#if this.recuring}} {{else}}class='one-off'{{/if}}>
+				<h3><span>{{this.dateRelative}}:</span> {{this.title}}</h3>
+				{{#if this.where}}
+					<p class='where'>{{this.where}}</p>
+				{{/if}}
+				<p class='when'>{{this.date}}</p>
+				<p class='description'>{{{this.description}}}</p>
+			</li>
+		{{/each}}
+	</ul>
+	
+	<p>You can <a href="https://www.google.com/calendar/ical/ktihar6uvc0lc1odtovk41fklo%40group.calendar.google.com/public/basic.ics">subscribe to the calendar</a> to have new events and updates automatically 
+		appear in your calendaring application of choice or <a href="https://www.google.com/calendar/embed?src=ktihar6uvc0lc1odtovk41fklo@group.calendar.google.com&ctz=America/Los_Angeles">
+		view the full calendar</a>.</p>
+	
+</article>

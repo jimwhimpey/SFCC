@@ -52,7 +52,7 @@ body {
     body header p {
       font-style: italic;
       font-size: 1.16667em;
-      color: #dddddd;
+      color: #a5a5a5;
       text-shadow: #000 1px 1px 0;
       margin: 0 0 1em 0;
       line-height: 1.4; }
@@ -73,15 +73,14 @@ body {
             color: #EEE;
             background: #222; }
   body.page header {
-    border-bottom: 1px dotted #333; }
+    border-bottom: 1px dotted #656565; }
     body.page header object {
       margin: 0 0 2em 0; }
     body.page header p {
       margin-bottom: 1.6em; }
   body.page article {
     margin: 0 auto;
-    max-width: 1000px;
-    padding: 5%;
+    padding: 5% 8%;
     line-height: 1.5;
     font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif; }
     @media only screen and (max-width: 320px) {
@@ -100,32 +99,46 @@ body {
     body.page article p, body.page article ul, body.page article ol {
       font-size: 1.11111em;
       margin-bottom: 0.8em;
-      color: #dddddd; }
+      color: #a5a5a5; }
     body.page article ul {
       list-style: square;
       margin-left: 1.3em; }
     body.page article a {
-      color: #ec9fbf;
+      color: #ff1ff2;
       text-decoration: none;
-      border-bottom: 1px dotted #e474a3; }
+      border-bottom: 1px dotted #a52c9c; }
       body.page article a:hover {
-        color: #f4cadb;
-        border-bottom: 1px dotted #ec9fbf; }
+        color: #ff52f6;
+        border-bottom: 1px dotted #ca3ac1; }
     body.page article strong {
       font-weight: bold;
       color: #FFF; }
     body.page article em {
       font-style: italic;
       color: #FFF; }
-  body.page .calendar h3 {
-    margin-bottom: -0.2em;
-    color: #FFF; }
-  body.page .calendar .where {
-    color: rgba(255, 255, 255, 0.5);
-    font-style: italic;
-    margin: 0; }
-  body.page .calendar .when {
-    color: rgba(255, 255, 255, 0.8); }
+  body.page .calendar {
+    margin-bottom: 60px; }
+    body.page .calendar h3 {
+      margin-bottom: -0.2em;
+      color: #FFF; }
+      body.page .calendar h3 span {
+        opacity: 0.2;
+        letter-spacing: 0;
+        font-weight: normal; }
+    body.page .calendar .one-off h3 span {
+      color: #00ca00;
+      opacity: 1;
+      font-weight: bold; }
+    body.page .calendar .where {
+      color: rgba(255, 255, 255, 0.5);
+      font-style: italic;
+      margin: 0; }
+    body.page .calendar .when {
+      color: rgba(255, 255, 255, 0.8);
+      margin: 0 0 5px; }
+    body.page .calendar .description {
+      opacity: rgba(255, 255, 255, 0.8);
+      font-size: 0.9em; }
 
 .instagram_container {
   text-align: center;
