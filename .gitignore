@@ -17,3 +17,9 @@ tmp
 _yardoc
 doc/
 .DS_Store
+
+# ignore VIM .swp
+*.swp
+
+# ignore node_modules
+node_modules/
