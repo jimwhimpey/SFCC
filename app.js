@@ -71,6 +71,7 @@ app.get('/rides-calendar', function(req, response){
 	url += '&maxResults=12';
 	url += '&singleEvents=true';
 	url += '&orderBy=startTime';
+	url += '&timeMin=' + moment().format();
 
 	https.get(url, function(res) {
 	
