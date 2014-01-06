@@ -77,7 +77,7 @@ body {
       margin-bottom: 1.6em; }
   body.page article {
     margin: 0 auto;
-    padding: 2% 8%;
+    padding: 2% 8% 5% 8%;
     line-height: 1.5;
     font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif; }
     @media only screen and (max-width: 320px) {
