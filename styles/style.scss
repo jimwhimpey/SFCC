@@ -149,7 +149,10 @@ body {
 			}
 			.description {
 				opacity: rgba(255,255,255,0.8);
-				font-size: 0.9em;
+				p {
+					font-size: 0.9em;
+					margin-bottom: 5px;
+				}
 			}
 		}
 	}

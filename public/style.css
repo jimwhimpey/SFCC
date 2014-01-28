@@ -136,8 +136,10 @@ body {
       color: rgba(255, 255, 255, 0.8);
       margin: 0 0 5px; }
     body.page .calendar .description {
-      opacity: rgba(255, 255, 255, 0.8);
-      font-size: 0.9em; }
+      opacity: rgba(255, 255, 255, 0.8); }
+      body.page .calendar .description p {
+        font-size: 0.9em;
+        margin-bottom: 5px; }
 
 .instagram_container {
   text-align: center;

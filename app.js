@@ -99,14 +99,25 @@ app.get('/rides-calendar', function(req, response){
 				timeRelative = time.fromNow();
 				
 				var recuring = (typeof data.items[i].recurringEventId == "undefined") ? false : true;
-	
+				
+				// Convert new lines to paragraphs
+				var description = "";
+				if (typeof data.items[i].description !== 'undefined') {
+					description = data.items[i].description.replace(/\n{2,}/gim, "</p><p>");
+					description = description.replace(/\n/gim, '<br>');
+					description = "<p>" + description + "</p>";
+				}
+				
+				// Convert URLs into proper links
+				description = replaceURLWithHTMLLinks(description);
+				
 				calendar.push({
 					"timestamp": time.format("X"),
 					"date": timeFormatted,
 					"dateRelative": (timeRelative == "in a day") ? "tomorrow" : timeRelative,
 					"title": data.items[i].summary,
 					"where": data.items[i].location,
-					"description": data.items[i].description,
+					"description": description,
 					"recuring": recuring
 				});
 				
@@ -121,6 +132,13 @@ app.get('/rides-calendar', function(req, response){
 	});
 
 });
+
+// Helpers
+
+function replaceURLWithHTMLLinks(text) {
+	var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+	return text.replace(exp,"<a href='$1'>$1</a>"); 
+}
 
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
