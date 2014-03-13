@@ -115,6 +115,26 @@ body {
     body.page article em {
       font-style: italic;
       color: #FFF; }
+    body.page article h4 {
+      font-weight: bold;
+      font-size: 20px;
+      margin: 20px 0 10px 0; }
+    body.page article table {
+      margin: 0 0 15px 0;
+      border: 2px solid #444; }
+      body.page article table td, body.page article table th {
+        padding: 10px;
+        text-align: center; }
+      body.page article table tr td:first-child, body.page article table tr th:first-child {
+        width: 110px;
+        text-align: left; }
+      body.page article table th {
+        border-bottom: 2px solid #444;
+        color: rgba(255, 255, 255, 0.3); }
+      body.page article table td {
+        border-bottom: 1px solid #333; }
+      body.page article table tr:last-child td {
+        border-bottom: none; }
   body.page .calendar {
     margin-bottom: 60px; }
     body.page .calendar h3 {

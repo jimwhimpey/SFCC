@@ -48,6 +48,10 @@ app.get('/about', function(req, res){
 	res.render('about', {'type': 'page'});
 });
 
+app.get('/racing', function(req, res){
+	res.render('racing', {'type': 'page'});
+});
+
 app.get('/membership', function(req, res){
 	res.render('membership', {'type': 'page'});
 });
