@@ -146,6 +146,19 @@ body {
 					border-bottom: 1px solid #333;
 				}
 				tr:last-child td { border-bottom: none; }
+				&.tt {
+					tr td:first-child,
+					tr th:first-child { 
+						width: 50px;
+					}
+					tr td:nth-child(2),
+					tr th:nth-child(2) { 
+						text-align: left;
+					}
+					tr td:last-child { 
+						color: rgba(255,255,255,0.3);
+					}
+				}
 			}
 		}
 		.calendar {
