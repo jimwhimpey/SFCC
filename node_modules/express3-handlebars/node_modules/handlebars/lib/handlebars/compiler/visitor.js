@@ -1,13 +1,11 @@
-var Handlebars = require("./base");
+function Visitor() {}
 
-// BEGIN(BROWSER)
+Visitor.prototype = {
+  constructor: Visitor,
 
-Handlebars.Visitor = function() {};
-
-Handlebars.Visitor.prototype = {
   accept: function(object) {
     return this[object.type](object);
   }
 };
-// END(BROWSER)
 
+export default Visitor;

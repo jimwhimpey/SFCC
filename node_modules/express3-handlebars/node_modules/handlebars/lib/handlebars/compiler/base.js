@@ -1,27 +1,12 @@
-var handlebars = require("./parser").parser;
-var Handlebars = require("../base");
+import parser from "./parser";
+import AST from "./ast";
 
-// BEGIN(BROWSER)
-Handlebars.Parser = handlebars;
+export { parser };
 
-Handlebars.parse = function(string) {
-  Handlebars.Parser.yy = Handlebars.AST;
-  return Handlebars.Parser.parse(string);
-};
+export function parse(input) {
+  // Just return if an already-compile AST was passed in.
+  if(input.constructor === AST.ProgramNode) { return input; }
 
-Handlebars.print = function(ast) {
-  return new Handlebars.PrintVisitor().accept(ast);
-};
-
-Handlebars.logger = {
-  DEBUG: 0, INFO: 1, WARN: 2, ERROR: 3, level: 3,
-
-  // override in the host environment
-  log: function(level, str) {}
-};
-
-Handlebars.log = function(level, str) { Handlebars.logger.log(level, str); };
-
-// END(BROWSER)
-
-module.exports = Handlebars;
+  parser.yy = AST;
+  return parser.parse(input);
+}

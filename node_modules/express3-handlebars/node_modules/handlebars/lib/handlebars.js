@@ -1,14 +1,33 @@
-var Handlebars = require("./handlebars/base");
-module.exports = Handlebars;
+/*globals Handlebars: true */
+import Handlebars from "./handlebars.runtime";
 
-// Each of these augment the Handlebars object. No need to setup here.
-// (This is done to easily share code between commonjs and browse envs)
-require("./handlebars/utils");
+// Compiler imports
+import AST from "./handlebars/compiler/ast";
+import { parser as Parser, parse } from "./handlebars/compiler/base";
+import { Compiler, compile, precompile } from "./handlebars/compiler/compiler";
+import JavaScriptCompiler from "./handlebars/compiler/javascript-compiler";
 
-require("./handlebars/compiler");
-require("./handlebars/runtime");
+var _create = Handlebars.create;
+var create = function() {
+  var hb = _create();
 
-// BEGIN(BROWSER)
+  hb.compile = function(input, options) {
+    return compile(input, options, hb);
+  };
+  hb.precompile = function (input, options) {
+    return precompile(input, options, hb);
+  };
 
-// END(BROWSER)
+  hb.AST = AST;
+  hb.Compiler = Compiler;
+  hb.JavaScriptCompiler = JavaScriptCompiler;
+  hb.Parser = Parser;
+  hb.parse = parse;
 
+  return hb;
+};
+
+Handlebars = create();
+Handlebars.create = create;
+
+export default Handlebars;

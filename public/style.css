@@ -45,7 +45,6 @@ body {
     @media only screen and (max-width: 600px) {
       body header {
         padding: 10%; }
-
       body header object {
         width: 250px;
         height: 180px; } }
