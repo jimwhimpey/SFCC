@@ -118,6 +118,7 @@ body {
 					color: lighten($pink, 10%);
 					border-bottom: 1px dotted lighten($purple, 10%);
 				}
+				strong { color: $pink; }
 			}
 			strong { font-weight: bold; color: #FFF; }
 			em { font-style: italic; color: #FFF; }

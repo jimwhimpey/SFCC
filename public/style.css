@@ -108,6 +108,8 @@ body {
       body.page article a:hover {
         color: #ff52f6;
         border-bottom: 1px dotted #ca3ac1; }
+      body.page article a strong {
+        color: #ff1ff2; }
     body.page article strong {
       font-weight: bold;
       color: #FFF; }
