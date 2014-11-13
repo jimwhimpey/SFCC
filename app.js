@@ -68,6 +68,10 @@ app.get('/contact', function(req, res){
 	res.render('contact', {'type': 'page'});
 });
 
+app.get('/docs', function(req, res){
+	res.redirect('https://drive.google.com/a/sfcycle.org/folderview?id=0B8hzW4MiUJSCV1pIelFPckhuakE&usp=sharing');
+});
+
 app.get('/rides-calendar', function(req, response){
 
 	var url = 'https://www.googleapis.com/calendar/v3/calendars/ktihar6uvc0lc1odtovk41fklo@group.calendar.google.com/events';
