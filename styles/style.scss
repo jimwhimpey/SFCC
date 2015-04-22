@@ -30,14 +30,14 @@ $base_h3:26;
 
 
 body {
-	background: lighten($off_black, 8%);
+	background: lighten($off_black, 5%);
 	color: #FFF;
 	header {
 		text-align: center;
 		background: $off_black;
 		padding: 5%;
 		font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
-		object { 
+		object {
 			margin: 0 0 5em 0;
 			width: 402px;
 			height: 250px;
@@ -100,7 +100,7 @@ body {
 				letter-spacing: 0.2em;
 				margin: 1.8em 0 0.3em 0;
 			}
-			p, ul, ol { 
+			p, ul, ol {
 				font-size: em($base_p);
 				margin-bottom: 0.8em;
 				color: lighten($gray, 50%);
@@ -114,7 +114,7 @@ body {
 				color: $pink;
 				text-decoration: none;
 				border-bottom: 1px dotted $purple;
-				&:hover { 
+				&:hover {
 					color: lighten($pink, 10%);
 					border-bottom: 1px dotted lighten($purple, 10%);
 				}
@@ -135,7 +135,7 @@ body {
 					text-align: center;
 				}
 				tr td:first-child,
-				tr th:first-child { 
+				tr th:first-child {
 					width: 110px;
 					text-align: left;
 				}
@@ -149,14 +149,14 @@ body {
 				tr:last-child td { border-bottom: none; }
 				&.tt {
 					tr td:first-child,
-					tr th:first-child { 
+					tr th:first-child {
 						width: 50px;
 					}
 					tr td:nth-child(2),
-					tr th:nth-child(2) { 
+					tr th:nth-child(2) {
 						text-align: left;
 					}
-					tr td:last-child { 
+					tr td:last-child {
 						color: rgba(255,255,255,0.3);
 					}
 				}
@@ -164,16 +164,16 @@ body {
 		}
 		.calendar {
 			margin-bottom: 60px;
-			h3 { 
+			h3 {
 				margin-bottom: -0.2em;
 				color: #FFF;
-				span { 
+				span {
 					opacity: 0.2;
 					letter-spacing: 0;
 					font-weight: normal;
 				}
 			}
-			.one-off h3 span { 
+			.one-off h3 span {
 				color: rgb(0,202,0);
 				opacity: 1;
 				font-weight: bold;
@@ -183,7 +183,7 @@ body {
 				font-style: italic;
 				margin: 0;
 			}
-			.when { 
+			.when {
 				color: rgba(255,255,255,0.8);
 				margin: 0 0 5px;
 			}
