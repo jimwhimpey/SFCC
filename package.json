@@ -4,12 +4,12 @@
 	"version": "0.0.1",
 	"private": false,
 	"dependencies": {
-		"express": "3.12.0",
-		"express3-handlebars": "0.1.2",
-		"node-sass": "0.9.3",
-		"xml2js": "0.4.4",
-		"moment": "2.7.0",
-		"instagram-node-lib": "0.1.1"
+		"express": "3.x",
+		"express3-handlebars": "0.x",
+		"node-sass": "0.x",
+		"xml2js": "0.x",
+		"moment": "2.x",
+		"instagram-node-lib": "0.x"
 	},
 	"engines": {
 		"node": "0.8.x",
